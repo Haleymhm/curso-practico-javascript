@@ -106,7 +106,14 @@ function message (name, lastname, nickname){
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
 - ¿Qué es un condicional?
+```
+Son bloques de codigo que se ejecutan cuando una variable cumple con una condicion defeinida
+```
 - ¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?
+```
+if elseif else
+switch
+```
 - ¿Puedo combinar funciones y condicionales?
 
 ### 2️⃣ Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:
@@ -129,10 +136,36 @@ switch (tipoDeSuscripcion) {
        break;
 }
 ```
+```
+const tipoDeSuscripcion = "Basic";
+
+if (tipoDeSuscripcion == "Free") {
+    console.log("Solo puedes tomar los cursos gratis");
+}elsef (tipoDeSuscripcion == "Basic") {  
+       console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+}elsef (tipoDeSuscripcion == "Expert") {    case "":
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+}elsef (tipoDeSuscripcion == "ExpertPlus") {   case "":
+  console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+}
+```
 
 ### 3️⃣ Replica el comportamiento de tu condicional anterior con if, else y else if, pero ahora solo con if (sin else ni else if).
+```
+const tipoDeSuscripcion = "Basic";
 
-> 💡 Bonus: si ya eres una experta o experto en el lenguaje, te desafío a comentar cómo replicar este comportamiento con arrays y un solo condicional. 😏
+if (tipoDeSuscripcion == "Free") {
+    console.log("Solo puedes tomar los cursos gratis");
+}
+if (tipoDeSuscripcion == "Basic") {  
+       console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+}if (tipoDeSuscripcion == "Expert") { 
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+}
+if (tipoDeSuscripcion == "ExpertPlus") {
+  console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+}
+```
 
 
 ## Ciclos
