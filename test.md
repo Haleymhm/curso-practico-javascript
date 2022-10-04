@@ -74,8 +74,14 @@ print('Su saldo real es: ' + saldo);
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
 - ¿Qué es una función?
+``` Son bloques de codigo reutilizables ```
 - ¿Cuándo me sirve usar una función en mi código?
+``` Cuando una accion se requiera utilizar mas de una seccion del codigo ```
 - ¿Cuál es la diferencia entre parámetros y argumentos de una función?
+```
+Parametros: valores que requiere una funcion para su ejecuacion
+Argumentos: valores que se indican al momento de ejecutar una funcion
+```
 
 ### 2️⃣ Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
 
@@ -87,7 +93,17 @@ const nickname = "juandc";
 
 console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
 ```
+```
+const name = "Haleym de Jesus";
+const lastname = "Hidalgo Moyetones";
+const nickname = "haleymhm";
 
+function message (name, lastname, nickname){
+    let completeName = name + lastname;
+    console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
+}
+
+```
 
 ## Condicionales
 
