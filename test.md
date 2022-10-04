@@ -159,7 +159,8 @@ if (tipoDeSuscripcion == "Free") {
 }
 if (tipoDeSuscripcion == "Basic") {  
        console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
-}if (tipoDeSuscripcion == "Expert") { 
+}
+if (tipoDeSuscripcion == "Expert") { 
     console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
 }
 if (tipoDeSuscripcion == "ExpertPlus") {
