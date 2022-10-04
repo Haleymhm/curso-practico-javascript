@@ -94,10 +94,6 @@ const nickname = "juandc";
 console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
 ```
 ```
-const name = "Haleym de Jesus";
-const lastname = "Hidalgo Moyetones";
-const nickname = "haleymhm";
-
 function message (name, lastname, nickname){
     let completeName = name + ' ' + lastname;
     console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
