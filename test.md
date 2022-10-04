@@ -21,7 +21,12 @@ Recuerda que **el éxito no se mide por cuánto tiempo te toma aprender**, esa m
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
 - ¿Qué es una variable y para qué sirve?
+``` Espacio de memoria para almacenar información (dependiendo el tipo y estructas de datos segun el lenguaje) ```
 - ¿Cuál es la diferencia entre declarar e inicializar una variable?
+``` 
+    declarar variable: inicarle al lenguaje el nombre de la variable a utilizar y el tipo de datos
+    inicializar variable: inicarle al lenguaje el nombre de la variable y adignar un valor inicial
+```
 - ¿Cuál es la diferencia entre sumar números y concatenar strings?
 - ¿Cuál operador me permite sumar o concatenar?
 
