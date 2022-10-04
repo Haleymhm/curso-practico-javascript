@@ -53,7 +53,7 @@ Recuerda que **el éxito no se mide por cuánto tiempo te toma aprender**, esa m
 - let username = '@haleymhm'
 - let age = 42
 - let mail = 'haleymhm@gmail.com'
-- let adult = True
+- let is_adult = True
 - let saved_money = 150000
 - let debts = 12000
 
@@ -61,11 +61,12 @@ Recuerda que **el éxito no se mide por cuánto tiempo te toma aprender**, esa m
 
 - Nombre completo (nombre y apellido)
 - Dinero real (dinero ahorrado menos deudas)
-``` 
-print(firstname + ' ' + fullname)
+```
+let name =  firstname + ' ' + fullname;
+print(name);
 
-let saldo balance = saved_money - debts
-print('Su saldo real es: ' + saldo)
+let saldo balance = saved_money - debts;
+print('Su saldo real es: ' + saldo);
 ```
 
 ## Funciones
