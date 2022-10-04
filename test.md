@@ -99,7 +99,7 @@ const lastname = "Hidalgo Moyetones";
 const nickname = "haleymhm";
 
 function message (name, lastname, nickname){
-    let completeName = name + lastname;
+    let completeName = name + ' ' + lastname;
     console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
 }
 
