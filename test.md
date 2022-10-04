@@ -107,12 +107,13 @@ function message (name, lastname, nickname){
 
 - ¿Qué es un condicional?
 ```
-Son bloques de codigo que se ejecutan cuando una variable cumple con una condicion defeinida
+Son bloques de codigo que se ejecutan cuando una variable cumple con una condicion o validacion defeinida
 ```
 - ¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?
 ```
-if elseif else
-switch
+** If (elseif else): ** nos permite hacer validaciones completamente distintas en cada validación o condional
+
+** switch:** Comparan con la misma variable o condición que definimos en el switch
 ```
 - ¿Puedo combinar funciones y condicionales?
 
@@ -167,14 +168,29 @@ if (tipoDeSuscripcion == "ExpertPlus") {
   console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
 }
 ```
-
-
+```
+let mensajes = {
+  Free: "Solo puedes tomar los cursos gratis",
+  Basic: "Puedes tomar casi todos los cursos de Platzi durante un mes",
+  Expert: "Puedes tomar casi todos los cursos de Platzi durante un año",
+  ExpertPlus: "Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año"
+}
+const tipoDeSuscripcion = "Basic";
+if(!!mensajes[tipoDeSuscripcion]) {
+  console.log(mensajes[tipoDeSuscripcion]);
+}
+```
 ## Ciclos
 
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
-- ¿Qué es un ciclo?
+- ¿Qué es un ciclo? ``` Es ej un bloque de codigo mientra se cumpla una condicion ```
 - ¿Qué tipos de ciclos existen en JavaScript?
+```
+- ** for: ** esta compuesta por de tres expresiones: __inicialización__ Sucede antes de la primera ejecución del bucle. Esta expresión es comúnmente utilizada para crear contadores; __condición__  Expresión que es evaluada antes de la ejecución de cada iteración; __expresión-final__ Expresión que se ejecuta luego de cada iteración. Usualmente es utilizada para incrementar un contador. Pero también puede ser utilizada para decrementar el contador
+- ** while: ** Es un blucle que empieza por evaluar la condición. Si la condición es verdadera (devuelve true), entonces las sentencias son ejecutadas. Si la condición es falsa (devuelve false), entonces las sentencias no son ejecutadas. Luego el bucle finaliza.
+- ** do: ** similar al bucle __while __  solo que la condición se evalúa al final por lo que el bloque de codigo es ejecuta al menos una vez
+```
 - ¿Qué es un ciclo infinito y por qué es un problema?
 - ¿Puedo mezclar ciclos y condicionales?
 
@@ -189,12 +205,38 @@ for (let i = 10; i >= 2; i--) {
     console.log("El valor de i es: " + i);
 }
 ```
+```
+let i = 0;
+while (i < 5) {
+    console.log("El valor de i es: " + i);
+    i++;
+}
+
+let i = 10;
+while (i >= 5) {
+    console.log("El valor de i es: " + i);
+    i--;
+}
+```
+
 
 ### 3️⃣ Escribe un código en JavaScript que le pregunte a los usuarios cuánto es `2 + 2`. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.
 
 > 💡 Pista: puedes usar la función prompt de JavaScript.
+```
+let keep_on = true;
 
+let sum = 0;
 
+while(keep_on){
+    sum = prompt("¿Cuánto es 2+2?")
+    if (suma==4){
+        console.log("Felicidades");
+        keep_on = false;
+    }
+}
+
+```
 ## Listas
 
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
