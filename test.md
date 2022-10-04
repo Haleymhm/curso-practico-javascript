@@ -24,30 +24,49 @@ Recuerda que **el éxito no se mide por cuánto tiempo te toma aprender**, esa m
 ``` Espacio de memoria para almacenar información (dependiendo el tipo y estructas de datos segun el lenguaje) ```
 - ¿Cuál es la diferencia entre declarar e inicializar una variable?
 ``` 
-    declarar variable: inicarle al lenguaje el nombre de la variable a utilizar y el tipo de datos
-    inicializar variable: inicarle al lenguaje el nombre de la variable y adignar un valor inicial
+    Declarar variable: inicarle al lenguaje el nombre de la variable a utilizar y el tipo de datos
+    Inicializar variable: inicarle al lenguaje el nombre de la variable y asignar un valor inicial
 ```
 - ¿Cuál es la diferencia entre sumar números y concatenar strings?
+``` 
+    Sumar Numeros: aplica operacion matemematica a 2 o mas variables numericas (integer, float)
+    Concatenar Strings: Une 2 o mas variables de tipo Strings en una sola salida.
+```
+
 - ¿Cuál operador me permite sumar o concatenar?
+``` + ```
 
 ### 2️⃣ Determina el nombre y tipo de dato para almacenar en variables la siguiente información:
 
-- Nombre
-- Apellido
-- Nombre de usuario en Platzi
-- Edad
-- Correo electrónico
-- Mayor de edad
-- Dinero ahorrado
-- Deudas
+- Nombre ** String **
+- Apellido ** String **
+- Nombre de usuario en Platzi ** String **
+- Edad ** Number**
+- Correo electrónico ** String **
+- Mayor de edad ** Boolean **
+- Dinero ahorrado ** Number **
+- Deudas ** Number **
 
 ### 3️⃣ Traduce a código JavaScript las variables del ejemplo anterior y deja tu código en los comentarios.
+- let firstname = 'Haleym'
+- let fullname = 'Hidalgo'
+- let username = '@haleymhm'
+- let age = 42
+- let mail = 'haleymhm@gmail.com'
+- let adult = True
+- let saved_money = 150000
+- let debts = 12000
 
 ### 4️⃣ Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
 
 - Nombre completo (nombre y apellido)
 - Dinero real (dinero ahorrado menos deudas)
+``` 
+print(firstname + ' ' + fullname)
 
+let saldo balance = saved_money - debts
+print('Su saldo real es: ' + saldo)
+```
 
 ## Funciones
 
