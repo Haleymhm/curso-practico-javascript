@@ -180,6 +180,25 @@ if(!!mensajes[tipoDeSuscripcion]) {
   console.log(mensajes[tipoDeSuscripcion]);
 }
 ```
+💡 Bonus: si ya eres una experta o experto en el lenguaje, te desafío a comentar cómo replicar este comportamiento con arrays o objetos y un solo condicional. 😏
+
+```
+const tiposDeSuscripciones = {
+    free: 'Solo puedes tomar los cursos gratis',
+    basic: 'Puedes tomar casi todos los cursos de Platzi durante un mes',
+    expert: 'Puedes tomar casi todos los cursos de Platzi durante un año',
+    expertduo: 'Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año',
+};
+
+function conseguirTipoSuscripcion(suscripcion) {
+    if (tiposDeSuscripciones[suscripcion]) {
+        console.log(tiposDeSuscripciones[suscripcion]);
+        return;
+    }
+
+    console.warn('Ese tipo de suscripción no existe')
+}
+```
 ## Ciclos
 
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
@@ -242,16 +261,45 @@ while(keep_on){
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
 - ¿Qué es un array?
+``` 
+Es una lista de elementos
+```
 - ¿Qué es un objeto?
+``` 
+Es una lista de elementos con nombre claves
+```
 - ¿Cuándo es mejor usar objetos o arrays?
 - ¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
 
 ### 2️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
+```
+let vegetables = ['Toemate', 'Zanahoria', 'Cebolla', 'Apio', 'Lechuga'];
+
+function firstVegetal(vegetables){
+    console.log(arr[0]);
+}
+```
 
 ### 3️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
+```
+let vegetables = ['Toemate', 'Zanahoria', 'Cebolla', 'Apio', 'Lechuga'];
 
+function printVegetables(vegetables){
+    let total = vegetables.length
+    for (let i = 0; i < total; i++){
+        console.log(vegetables[i]);
+    }
+}
+```
 ### 4️⃣ Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
-
+```
+function imprimirElementoPorElementoObjeto(obj) {
+    const arr = Object.values(obj);
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i])
+    }
+}
+```
 
 ## ¿Cómo te fue? 🏆
 
